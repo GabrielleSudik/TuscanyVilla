@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--jquery thing-->
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="Bootstrap/js/bootstrap.js"></script>
+    <link href="Site.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!--navigation bar: looks like it's first in VC project-->
+    <nav class="navbar navbar-static-top" id="navvy">
+        <!--we chained two classes there. the ID is ours.-->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div> <!--that will collapse the menu when it's squished-->
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <!--the ID navbar is affected by other things referencing #navbar-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#locations">Locations</a></li>
+                    <!--<li><a href="#locations">Locations</a></li>-->
+                    <li><a href="#about">Ammenities</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div> <!--nav-collapse ends here-->
+
+        </div>
+
+    </nav>
+
+    <!--header: looks like it's second on TV page.-->
+    <div class="page-header">
+        <div class="container">
+
+            <div class="col-xs-9">
+                <img id="mainVilla" src="Images/tuscany-villas-sant-anna whole house.jpg" alt="main villa" />
+            </div>
+
+            <div class="col-xs-3">
+                <img id="map" img src="Images/Versilia map.jpg" alt="map" />
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,13 +1,12 @@
 ﻿body {
-    /*padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;*/
+    background-color: slategray;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 
-    border-style: solid;
-    border-left: 100px #ff0000;
-    border-right: 100px #fff060;
-    width: 1210px;
+    /*border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    width: 1210px;*/
 }
 
 #navvy{
@@ -31,27 +30,47 @@
         maybe only needs centering?
     */
     text-align: center;
+    clear: left;
+    clear: right;
 }
 
-.parasAndPics{
-    height: 348px;
-    width: auto;
+/*.parasAndPics img{
+    height: 350px;
+    width: 500px;
+}*/
+
+#snow{
+    height: 350px;
+    width: 500px;
+    float: right;
+    padding: 20px 20px 20px 20px;
+    /*clear: left;*/
 }
 
-#snow {
-    width: 400px;
-    height: auto;
+.pnpTwo{
+    clear: right;
 }
-/* why are these size things working??*/
-#modern {
-        width: 400px;
-    height: auto;
+
+#modern{
+    height: 350px;
+    width: 500px;
+    float: left;
+    padding: 20px 20px 20px 20px;
+    clear: right;
+}
+
+.pnpThree{
+    clear: left;
 }
 
 #grapes{
-        width: 400px;
-    height: auto;
+    height: 350px;
+    width: 500px;
+    float: right;
+    padding: 20px 20px 20px 20px;
+    clear: left;
 }
+
 
 .img.gridOfNine{ /*should this be for nineImages instead? or will text stuff here work too?
                      and is it .img.gridOfNine for photos only?
@@ -83,13 +102,32 @@
 
 }
 
-#myCarousel{
+.Carousel{
     text-align: center;
     vertical-align: middle;
     height: 348px;
     background-color: purple;
 }
 
-.footer{
+.myFooter{
     text-align: center;
 }
+
+.pnpText{
+    margin: 30px 30px 30px 30px;
+}
+
+/*#snow {
+    width: 400px;
+    height: auto;
+}
+
+#modern {
+        width: 400px;
+    height: auto;
+}
+
+#grapes{
+        width: 400px;
+    height: auto;
+}*/

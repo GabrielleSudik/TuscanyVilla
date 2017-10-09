@@ -12,90 +12,109 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!--my own style sheet-->
     <link href="StyleSheet.css" rel="stylesheet" />
 
+    <!--selected Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!--navigation bar: looks like it's first in VC project-->
     <nav class="navbar navbar-static-top" id="navvy">
         <!--we chained two classes there. the ID is ours.-->
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div> <!--that will collapse the menu when it's squished-->
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div> <!--that will collapse the menu when it's squished-->
 
-            <div id="navbar" class="navbar-collapse collapse">
-                <!--the ID navbar is affected by other things referencing #navbar-->
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#locations">Locations</a></li>
-                    <!--<li><a href="#locations">Locations</a></li>-->
-                    <li><a href="#about">Ammenities</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#locations">LOCATIONS</a></li>
+                        <li><a href="#about">AMENITIES</a></li>
+                        <li><a href="#reviews">REVIEWS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
 
-                </ul>
-            </div> <!--nav-collapse ends here-->
-
+                    </ul>
+                </div>
+            </div>
         </div>
-
     </nav>
 
-    <!--header: looks like it's second on TV page.-->
-    <!--maybe the two pics aren't in columns. just next to each other-->
-    <div class="page-header">
+    <!--header/jumbotron-->
+    <div class="jumbotron">
         <div class="container">
             <div class="row">
 
-                <div class="col-xs-9 mainVilla">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 mainVilla">
                     <h1>Tuscany Villa</h1>
                     <h3>We specialize in relaxation</h3>
-                    <!--<img id="mainVilla" src="Images/tuscany-villas-sant-anna whole house.jpg" alt="main villa" />-->
                 </div>
 
-                <div class="col-xs-3 img-responsive">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <!--change sizes of these to be reponsive-->
                     <img id="map" src="Images/Versilia map.jpg" alt="map" />
                 </div>
             </div>
-
         </div>
     </div>
 
     <!--first widebar-->
+    <!--widebar is my name for the style of the... wide bars-->
     <div class="container-fluid">
         <div class="widebar">
-            <!--widebar is my name for the style of the... wide bars-->
-            <p>
-                <h2>LOCATIONS</h2>
-                <h3>Some places for you to go</h3>
-            </p>
+            <div class="row">
+                <p>
+                    <h2>LOCATIONS</h2>
+                    <h3>Some places for you to go</h3>
+                </p>
+            </div>
         </div>
     </div>
 
-    <!--three wide parapgraph and image combos-->
+    <!--three wide paragraph and image combos-->
     <div class="container-fluid">
-        <div class="parasAndPics img-responsive">
-            <!--gotta fix the img-responsive stuff-->
-            <div class="pnpOne">
+        <div class="parasAndPics">
+            <div class="row">
+                <div class="pnpOne">
+                    <p>
+                        <img id="snow" src="Images/italy-mountain-villa snow.jpeg" class="img-responsive" alt="snow mountain" />
+                        <div class="pnpText">
+                            <h3>Location #1</h3>
+                            The classic “Lorem ipsum dolor sit amet…” passage is attributed to a remixing
+                            of the Roman philosopher Cicero's 45 BC text De Finibus Bonorum et Malorum
+                            (“On the Extremes of Good and Evil”). More specifically, the passage is thought
+                            to originate from sections 1.10.32 – 33 of his text, with the most notable
+                            portion excerpted below:<br />
+                            <button type="button" class="buttonGrey">Reserve Now!</button>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="parasAndPics">
+        <div class="pnpTwo">
+            <div class="row">
                 <p>
-                    <img id="snow" src="Images/italy-mountain-villa snow.jpeg" alt="snow mountain" />
+                    <img id="modern" src="Images/modern-villa.jpeg" class="img-responsive" alt="modern house" />
                     <div class="pnpText">
-                        <h3>Location #1</h3>
-                        The classic “Lorem ipsum dolor sit amet…” passage is attributed to a remixing
-                        of the Roman philosopher Cicero's 45 BC text De Finibus Bonorum et Malorum
-                        (“On the Extremes of Good and Evil”). More specifically, the passage is thought
-                        to originate from sections 1.10.32 – 33 of his text, with the most notable
-                        portion excerpted below:<br />
-                        <button type="button">Reserve Now!</button>
+                        <h3>Location #2</h3>
+                        The classic “Lorem ipsum dolor sit amet…”
+                        passage is attributed to a remixing of the Roman philosopher
+                        Cicero's 45 BC text De Finibus Bonorum et Malorum (“On the Extremes of Good and
+                        Evil”). More specifically, the passage is thought to originate from sections 1.10.32
+                        – 33 of his text, with the most notable portion excerpted below:<br />
+                        <button type="button" class="buttonWhite">Check It Out!</button>
                     </div>
                 </p>
             </div>
@@ -103,45 +122,24 @@
     </div>
 
     <div class="parasAndPics">
-        <div class="pnpTwo">
-
-            <p>
-                <img id="modern" src="Images/modern-villa.jpeg" alt="modern house" />
-                <div class="pnpText">
-                    <h3>Location #2</h3>
-                    The classic “Lorem ipsum dolor sit amet…”
-                    passage is attributed to a remixing of the Roman philosopher
-                    Cicero's 45 BC text De Finibus Bonorum et Malorum (“On the Extremes of Good and
-                    Evil”). More specifically, the passage is thought to originate from sections 1.10.32
-                    – 33 of his text, with the most notable portion excerpted below:<br />
-                    <button type="button">Check It Out!</button>
-                </div>
-            </p>
-
-
-        </div>
-    </div>
-
-
-    <div class="parasAndPics">
         <div class="pnpThree">
-            <p>
-                <img id="grapes" src="Images/tuscany-grape-field-nature-51947.jpeg" alt="grape field" />
-                <div class="pnpText">
-                    <h3>Location #3</h3>
-                    The classic “Lorem ipsum dolor sit amet…”
-                    passage is attributed to a remixing of the Roman
-                    philosopher Cicero's 45 BC text De Finibus Bonorum et
-                    Malorum (“On the Extremes of Good and Evil”). More
-                    specifically, the passage is thought to originate from
-                    sections 1.10.32 – 33 of his text, with the most notable portion excerpted below:<br />
-                    <button type="button">Join Us!</button>
-                </div>
-            </p>
-
+            <div class="row">
+                <p>
+                    <img id="grapes" src="Images/tuscany-grape-field-nature-51947.jpeg" class="img-responsive" alt="grape field" />
+                    <div class="pnpText">
+                        <h3>Location #3</h3>
+                        The classic “Lorem ipsum dolor sit amet…”
+                        passage is attributed to a remixing of the Roman
+                        philosopher Cicero's 45 BC text De Finibus Bonorum et
+                        Malorum (“On the Extremes of Good and Evil”). More
+                        specifically, the passage is thought to originate from
+                        sections 1.10.32 – 33 of his text, with the most notable portion excerpted below:<br />
+                        <button type="button" class="buttonGrey">Join Us!</button>
+                    </div>
+                </p>
+            </div>
         </div>
     </div>
-
 
     <!--widebar-->
     <div class="container-fluid">
@@ -153,33 +151,29 @@
         </div>
     </div>
 
-
-    <!--3 columns. grid of 3x3 so columns of 4 on md and lg
+    <!--3 columns. grid of 3x3 so columns of 4 on md and lg.
         for xs, make em 12. make em 6 for sm.-->
 
     <div class="container-fluid">
-        <div class="gridOfNine img-responsive">
+        <div class="gridOfNine">
 
             <div class="row">
                 <!--first row: 3 pics in medium-->
-                <!--at the moment, these 3 items print downwards in first column-->
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <!--row 1, col 1-->
-                        <div class="nineImage">
-                            <img id="small pool" src="Images/3b-348x348 small pool.jpg" alt="small pool" />
-                            <div class="nineCenter"><h3>RECEPTIONS</h3></div>
-                        </div>
-
+                    <div class="nineImage">
+                        <img id="small pool" src="Images/3b-348x348 small pool.jpg" alt="small pool" />
+                        <div class="nineCenter"><h3>RECEPTIONS</h3></div>
+                    </div>
                 </div>
 
-                <!--YOU HAVE ONE WRONG IMAGE! find and replace.-->
                 <!--row 1, col 2-->
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="ninePara">
                         <h2>A VILLA FOR EVERY OCCASSION</h2>
                         <p>
-                            Five centuries later Lorem Ipsum experienced a surge in popularity with the release of Letraset's dry-transfer sheets. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use. Letraset included Lorem Ipsum passages in a panoply of fonts, styles, and sizes, solidifying the Latin-esque phrase's place<br />
-                            <button type="button">Check It Out!</button>
+                            Five centuries later Lorem Ipsum experienced a surge in popularity with the release of Letraset's dry-transfer sheets. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, <br />
+                            <button type="button" class="buttonGrey">Check It Out!</button>
                         </p>
                     </div>
                 </div>
@@ -188,7 +182,7 @@
                     <!--row 1, col 3-->
                     <div class="nineImage">
                         <img id="big pool" src="Images/42-348x348 day pool.jpg" alt="small pool" />
-                        <div class="nineCenter"><h3>RELAX BY<br/> THE POOL</h3></div>
+                        <div class="nineCenter"><h3>RELAX BY<br /> THE POOL</h3></div>
                     </div>
                 </div>
             </div>
@@ -200,8 +194,8 @@
                     <div class="ninePara">
                         <h2>WHAT SETS US APART</h2>
                         <p>
-                            Five centuries later Lorem Ipsum experienced a surge in popularity with the release of Letraset's dry-transfer sheets. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use. Letraset included Lorem Ipsum passages in a panoply of fonts, styles, and sizes, solidifying the Latin-esque phrase's place<br />
-                            <button type="button">Check It Out!</button>
+                            Five centuries later Lorem Ipsum experienced a surge in popularity with the release of Letraset's dry-transfer sheets. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, <br />
+                            <button type="button" class="buttonGrey">Check It Out!</button>
                         </p>
                     </div>
                 </div>
@@ -210,7 +204,7 @@
                     <!--row 2, col 2-->
                     <div class="nineImage">
                         <img id="bed" src="Images/314-348x348 - white bed.jpg" alt="white bed" />
-                        <div class="nineCenter"><h3>FEELS LIKE<br/> HOME</h3></div>
+                        <div class="nineCenter"><h3>FEELS LIKE<br /> HOME</h3></div>
                     </div>
                 </div>
 
@@ -219,8 +213,8 @@
                     <div class="ninePara">
                         <h2>TALK TO STAFF</h2>
                         <p>
-                            Five centuries later Lorem Ipsum experienced a surge in popularity with the release of Letraset's dry-transfer sheets. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use. Letraset included Lorem Ipsum passages in a panoply of fonts, styles, and sizes, solidifying the Latin-esque phrase's place<br />
-                            <button type="button">Check It Out!</button>
+                            Five centuries later Lorem Ipsum experienced a surge in popularity with the release of Letraset's dry-transfer sheets. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, <br />
+                            <button type="button" class="buttonGrey">Check It Out!</button>
                         </p>
                     </div>
                 </div>
@@ -232,7 +226,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="nineImage">
                         <img id="patio" src="Images/Villa-Rucellai-Toscani-2812-2-348x348 patio.jpg" alt="patio" />
-                        <div class="nineCenter"><h3>ENJOY THE<br/> VIEWS</h3></div>
+                        <div class="nineCenter"><h3>ENJOY THE<br /> VIEWS</h3></div>
                     </div>
                 </div>
 
@@ -241,8 +235,8 @@
                     <div class="ninePara">
                         <h2>BOOK YOUR VILLA</h2>
                         <p>
-                            Five centuries later Lorem Ipsum experienced a surge in popularity with the release of Letraset's dry-transfer sheets. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, architects, and advertisers for their professional look and ease of use. Letraset included Lorem Ipsum passages in a panoply of fonts, styles, and sizes, solidifying the Latin-esque phrase's place<br />
-                            <button type="button">Check It Out!</button>
+                            Five centuries later Lorem Ipsum experienced a surge in popularity with the release of Letraset's dry-transfer sheets. These sheets of lettering could be rubbed on anywhere and were quickly adopted by graphic artists, printers, <br />
+                            <button type="button" class="buttonGrey">Check It Out!</button>
                         </p>
                     </div>
                 </div>
@@ -251,13 +245,12 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
                     <div class="nineImage">
                         <img id="dining" src="Images/Villa-Vanna-231-348x348 dining.jpg" alt="dining" />"
-                        <div class="nineCenter"><h3>PRIVATE<br/>DINING</h3></div>
+                        <div class="nineCenter"><h3>PRIVATE<br />DINING</h3></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!--widebar-->
 
@@ -274,43 +267,44 @@
 
     <div class="container-fluid">
         <div id="mycarousel" class="carousel slide" data-ride="carousel">
-            <!-- indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-            </ol>
+            <div class="row">
+                <!-- indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item">
-                    <h3><q>I love it! I love it! I love it!</q></h3>
-                    <h3 class="reviewer">Stella, Avid Napper</h3><br />
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item">
+                        <h3><q>I love it! I love it! I love it!</q></h3>
+                        <h3 class="reviewer">Stella, Avid Napper</h3><br />
+                    </div>
+
+                    <div class="item">
+                        <h3><q>Eh... It's OK.</q></h3>
+                        <h3 class="reviewer">Troy, Beach Enthusiast</h3><br />
+                    </div>
+
+                    <div class="item active">
+                        <h3><q>Needs More Noodles</q></h3>
+                        <h3 class="reviewer">Jordan, Ramen Aficionado</h3><br />
+                    </div>
                 </div>
 
-                <div class="item">
-                    <h3><q>Eh... It's OK.</q></h3>
-                    <h3 class="reviewer">Troy, Beach Enthusiast</h3><br />
-                </div>
-
-                <div class="item active">
-                    <h3><q>Needs More Sushi</q></h3>
-                    <h3 class="reviewer">Jordan, Wasabi Aficionado</h3><br />
-                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </div>
-
 
     <!--widebar-->
     <div class="container-fluid">
@@ -322,12 +316,11 @@
         </div>
     </div>
 
-
     <!--contact forms-->
     <div class="container-fluid">
         <div class="contactForm">
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <p>Contact us and we'll get back to you within 24 hours.</p>
                     <p>
                         <a href="#">
@@ -349,20 +342,19 @@
                     </p>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <form action="contactMe">
                         <!--the next three lines are the input areas-->
                         <input type="text" name="Name" value="Name" class="myCommentBar">
-                        <input type="text" name="Email" value="Email" class="myCommentBar"><br>
-                        <input type="text" name="Comment" value="Comment" class="myCommentBox" /><br />
-                        <input type="submit" value="Submit"> <!--this line is the actual button-->
-                    </form>
+                        <input type="text" name="Email" value="Email" class="myCommentBar"><br />
+                        <textarea rows="5" cols="80" class="myCommentBox">Comments</textarea><br />
 
+                        <input type="submit" value="Submit" class="buttonGrey mySubmit"> <!--this line is the actual button-->
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!--footer-->
     <div class="footer-fluid">

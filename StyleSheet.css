@@ -2,11 +2,6 @@
     background-color: white;
     color: darkslategrey;
     font-family: 'Open Sans', sans-serif;
-
-    /*border-style: solid;
-    border-left: 0px;
-    border-right: 0px;
-    width: 1210px;*/
 }
 
 #navvy{
@@ -15,46 +10,58 @@
     color: white;
 }
 
-.navbar-header{
-    background-color: slategrey;
-
+#navvy a{
+    color: white;
 }
 
-/*.pageHeader.img{
-    height: 348px;
-    width: auto;
-}*/
+#navvy a:hover{
+    color: slategrey;
+}
+
+.navbar-glyphicon{
+    color: white; /*this is TRYING to make the hamburger whitel; didn't work*/
+}
 
 .mainVilla {
     background-image: url('../Images/tuscany-villas-sant-anna whole house.jpg');
     height: 348px;
     width: 75%;
     text-align: center;
-    /*padding-right: 0px;*/
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .widebar{
-    /*this style is for the blue bars going across the screen.
-        maybe only needs centering?
-    */
+    /*this style is for the bluegrey bars going across the screen.*/
     text-align: center;
     clear: left;
     clear: right;
     background-color: slategray;
     color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-/*.parasAndPics img{
-    height: 350px;
-    width: 500px;
-}*/
+.buttonGrey{ /*style of buttons on white background*/
+    background-color: slategrey;
+    color: white;
+    margin: 20px;
+    padding: 5px;
+}
+
+.buttonWhite{ /*style of buttons on grey background*/
+    background-color: white;
+    color: slategrey;
+    margin: 20px;
+    padding: 5px;
+}
 
 #snow{
     height: 350px;
     width: 500px;
     float: right;
     padding: 20px 20px 20px 20px;
-    /*clear: left;*/
+    margin: 20px;
 }
 
 .pnpTwo{
@@ -69,6 +76,7 @@
     float: left;
     padding: 20px 20px 20px 20px;
     clear: right;
+    margin: 20px;
 }
 
 .pnpThree{
@@ -81,21 +89,17 @@
     float: right;
     padding: 20px 20px 20px 20px;
     clear: left;
+    margin: 20px;
 }
 
-
-.img.gridOfNine{ /*should this be for nineImages instead? or will text stuff here work too?
-                     and is it .img.gridOfNine for photos only?
-                     or can I just gridOfNine for everything?
-                 */
+.img.gridOfNine{ /*I don't think this winds up being used, besides, not sure of syntax*/
     width: 250px;
     height: auto;
 }
 
-.gridOfNine{ /* or is it gridOfNine.p? or gridOfNine p?*/
+.gridOfNine{ /*ditto*/
     height: 348px;
     width: auto;
-
 }
 
 .ninePara{
@@ -103,64 +107,77 @@
     vertical-align: middle;
     height: 400px;
     width: auto;
-
 }
 
 .nineImage{
     text-align: center;
     vertical-align: middle;
-    height: auto;
+    height: 348px;
     width: 100%;
-
 }
 
 .nineCenter{
-
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: rgb(80, 80, 80); /*fallback color for old browsers*/
     background: rgba(80, 80, 80, .8);
     padding: 15px;
-
-    
 }
 
-.Carousel{
+.carousel-inner{
     text-align: center;
+    align-items: center;
     vertical-align: middle;
-    height: 348px;
-    background-color: white;
+    background-color: white; /*worked the first night, but never since*/
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    color: slategrey;
+}
+
+.contactForm{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.myCommentBar{
+    width: 300px;
+    padding: 10px;
+}
+
+.myCommentBox{
+    padding: 10px;
+}
+
+.mySubmit{
+    float: right;
 }
 
 .myFooter{
     text-align: center;
+    background-color:slategrey;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    clear: left; 
+    clear: right;
 }
 
 .pnpText{
     margin: 30px 30px 30px 30px;
 }
 
-/*#snow {
-    width: 400px;
-    height: auto;
-}
-
-#modern {
-        width: 400px;
-    height: auto;
-}
-
-#grapes{
-        width: 400px;
-    height: auto;
-}*/
-
 q{
-    font-style: italic;
+    font-style: italic; /*quotes in the carousel are "" and italics*/
 }
 
 .glyphicon{
-    color: slategrey;
+    color: black; /*all glyphicons made black so they can be seen against both backgrounds*/
+}
+
+.glyphicon-navbar .glyphicon-myFooter{
+    color: white; /*this was one of my attempts to make some of the glyphicons white. didn't work.*/
 }

@@ -1,6 +1,6 @@
 ﻿body {
-    background-color: slategray;
-    color: white;
+    background-color: white;
+    color: darkslategrey;
     font-family: 'Open Sans', sans-serif;
 
     /*border-style: solid;
@@ -11,6 +11,13 @@
 
 #navvy{
     float: right;
+    background-color: slategrey;
+    color: white;
+}
+
+.navbar-header{
+    background-color: slategrey;
+
 }
 
 /*.pageHeader.img{
@@ -21,8 +28,9 @@
 .mainVilla {
     background-image: url('../Images/tuscany-villas-sant-anna whole house.jpg');
     height: 348px;
+    width: 75%;
     text-align: center;
-    padding-right: 0px;
+    /*padding-right: 0px;*/
 }
 
 .widebar{
@@ -32,6 +40,8 @@
     text-align: center;
     clear: left;
     clear: right;
+    background-color: slategray;
+    color: white;
 }
 
 /*.parasAndPics img{
@@ -49,6 +59,8 @@
 
 .pnpTwo{
     clear: right;
+    background-color: slategrey;
+    color: white;
 }
 
 #modern{
@@ -97,16 +109,29 @@
 .nineImage{
     text-align: center;
     vertical-align: middle;
-    height: 400px;
-    width: auto;
+    height: auto;
+    width: 100%;
 
+}
+
+.nineCenter{
+
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(80, 80, 80, .8);
+    padding: 15px;
+
+    
 }
 
 .Carousel{
     text-align: center;
     vertical-align: middle;
     height: 348px;
-    background-color: purple;
+    background-color: white;
 }
 
 .myFooter{
@@ -131,3 +156,11 @@
         width: 400px;
     height: auto;
 }*/
+
+q{
+    font-style: italic;
+}
+
+.glyphicon{
+    color: slategrey;
+}
